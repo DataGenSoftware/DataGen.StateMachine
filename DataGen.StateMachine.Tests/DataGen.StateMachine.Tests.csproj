@@ -56,12 +56,17 @@
   </Choose>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StateMachineExample2Test.cs" />
     <Compile Include="StateMachineExample1Test.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DataGen.StateMachine.Example1\DataGen.StateMachine.Example1.csproj">
       <Project>{059d58e3-f03a-42b5-ada7-13d84a20e2fd}</Project>
       <Name>DataGen.StateMachine.Example1</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataGen.StateMachine.Example2\DataGen.StateMachine.Example2.csproj">
+      <Project>{d9886e64-2a70-4905-8da5-7316d6c746b9}</Project>
+      <Name>DataGen.StateMachine.Example2</Name>
     </ProjectReference>
     <ProjectReference Include="..\DataGen.StateMachine\DataGen.StateMachine.csproj">
       <Project>{c55bf4a7-9d46-4d50-8107-cdd9ea867b98}</Project>
