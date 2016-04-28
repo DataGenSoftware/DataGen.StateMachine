@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataGen.StateMachine.Exampl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataGen.StateMachine.Example2", "DataGen.StateMachine.Example2\DataGen.StateMachine.Example2.csproj", "{D9886E64-2A70-4905-8DA5-7316D6C746B9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataGen.StateMachine.Example.Common", "DataGen.StateMachine.Example.Common\DataGen.StateMachine.Example.Common.csproj", "{4970CDF1-D9D1-4CD2-9D55-B8CD2706A73A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -105,6 +107,22 @@ Global
 		{D9886E64-2A70-4905-8DA5-7316D6C746B9}.Release|x64.Build.0 = Release|Any CPU
 		{D9886E64-2A70-4905-8DA5-7316D6C746B9}.Release|x86.ActiveCfg = Release|Any CPU
 		{D9886E64-2A70-4905-8DA5-7316D6C746B9}.Release|x86.Build.0 = Release|Any CPU
+		{4970CDF1-D9D1-4CD2-9D55-B8CD2706A73A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4970CDF1-D9D1-4CD2-9D55-B8CD2706A73A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4970CDF1-D9D1-4CD2-9D55-B8CD2706A73A}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{4970CDF1-D9D1-4CD2-9D55-B8CD2706A73A}.Debug|ARM.Build.0 = Debug|Any CPU
+		{4970CDF1-D9D1-4CD2-9D55-B8CD2706A73A}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{4970CDF1-D9D1-4CD2-9D55-B8CD2706A73A}.Debug|x64.Build.0 = Debug|Any CPU
+		{4970CDF1-D9D1-4CD2-9D55-B8CD2706A73A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{4970CDF1-D9D1-4CD2-9D55-B8CD2706A73A}.Debug|x86.Build.0 = Debug|Any CPU
+		{4970CDF1-D9D1-4CD2-9D55-B8CD2706A73A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4970CDF1-D9D1-4CD2-9D55-B8CD2706A73A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4970CDF1-D9D1-4CD2-9D55-B8CD2706A73A}.Release|ARM.ActiveCfg = Release|Any CPU
+		{4970CDF1-D9D1-4CD2-9D55-B8CD2706A73A}.Release|ARM.Build.0 = Release|Any CPU
+		{4970CDF1-D9D1-4CD2-9D55-B8CD2706A73A}.Release|x64.ActiveCfg = Release|Any CPU
+		{4970CDF1-D9D1-4CD2-9D55-B8CD2706A73A}.Release|x64.Build.0 = Release|Any CPU
+		{4970CDF1-D9D1-4CD2-9D55-B8CD2706A73A}.Release|x86.ActiveCfg = Release|Any CPU
+		{4970CDF1-D9D1-4CD2-9D55-B8CD2706A73A}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

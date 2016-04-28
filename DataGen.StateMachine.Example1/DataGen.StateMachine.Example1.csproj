@@ -58,6 +58,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\DataGen.StateMachine.Example.Common\DataGen.StateMachine.Example.Common.csproj">
+      <Project>{4970cdf1-d9d1-4cd2-9d55-b8cd2706a73a}</Project>
+      <Name>DataGen.StateMachine.Example.Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DataGen.StateMachine\DataGen.StateMachine.csproj">
       <Project>{c55bf4a7-9d46-4d50-8107-cdd9ea867b98}</Project>
       <Name>DataGen.StateMachine</Name>

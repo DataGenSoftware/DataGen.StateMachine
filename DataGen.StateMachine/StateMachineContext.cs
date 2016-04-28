@@ -7,7 +7,7 @@ using DataGen.Extensions;
 
 namespace DataGen.StateMachine
 {
-    public class StateMachineContext<TState, TTransition>
+    public class StateMachineContext<TState, TTransition> : IStateMachineContext<TState, TTransition>
     {
         protected virtual IStateMachineEngine<TState, TTransition> StateMachine { get; set; }
 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DataGen.StateMachine.Example.Common;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,15 +18,9 @@ namespace DataGen.StateMachine.Example2
             DisplayMenu();
         }
 
-        private static void DisplayState()
-        {
-            Console.WriteLine();
-            Console.WriteLine(string.Format("Current state: {0}", Player.State.ToString()));
-        }
-
         private static void DisplayMenu()
         {
-            DisplayState();
+            Player.DisplayState();
 
             Console.WriteLine();
             Console.WriteLine("---Menu---");
@@ -35,14 +30,7 @@ namespace DataGen.StateMachine.Example2
             }
             Console.WriteLine("X - Exit");
 
-            GetUserCommand(new Action<string>(HandleMenuCommand));
-        }
-
-        private static void GetUserCommand(Action<string> menuCommandHandler)
-        {
-            var key = Console.ReadKey();
-            Console.WriteLine();
-            menuCommandHandler(key.KeyChar.ToString());
+            StateMachineExampleHelper.GetUserCommand(new Action<string>(HandleMenuCommand));
         }
 
         private static void HandleMenuCommand(string command)
@@ -56,39 +44,22 @@ namespace DataGen.StateMachine.Example2
                 int transition;
                 if (!int.TryParse(command, out transition))
                 {
-                    WrongCommand();
+                    StateMachineExampleHelper.WrongCommand();
                 }
                 else
                 {
                     if (((Transitions[])Enum.GetValues(typeof(Transitions))).Contains((Transitions)transition))
                     {
-                        HandleCommand((Transitions)transition);
+                        StateMachineExampleHelper.HandleCommand((Transitions)transition, Player);
                     }
                     else
                     {
-                        WrongCommand();
+                        StateMachineExampleHelper.WrongCommand();
                     }
                 }
             }
 
             DisplayMenu();
-        }
-
-        private static void HandleCommand(Transitions transition)
-        {
-            try
-            {
-                Player.HandleTransition(transition);
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
-        }
-
-        private static void WrongCommand()
-        {
-            Console.WriteLine("Wrong command! Try again.");
         }
     }
 }

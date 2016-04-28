@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="InvalidStateTransitionException.cs" />
+    <Compile Include="IStateMachineContext.cs" />
     <Compile Include="IStateMachineEngine.cs" />
     <Compile Include="NullTransitionException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
