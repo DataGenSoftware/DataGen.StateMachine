@@ -8,7 +8,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DataGen.StateMachine.Tests</RootNamespace>
     <AssemblyName>DataGen.StateMachine.Tests</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -16,6 +16,7 @@
     <ReferencePath>$(ProgramFiles)\Common Files\microsoft shared\VSTT\$(VisualStudioVersion)\UITestExtensionPackages</ReferencePath>
     <IsCodedUITest>False</IsCodedUITest>
     <TestProjectType>UnitTest</TestProjectType>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -35,6 +36,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DataGen.Extensions, Version=1.5.7.35892, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DataGen.Extensions.1.5.7\lib\net46\DataGen.Extensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
   </ItemGroup>
   <Choose>
@@ -51,6 +56,20 @@
   </Choose>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StateMachineExample1Test.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataGen.StateMachine.Example1\DataGen.StateMachine.Example1.csproj">
+      <Project>{059d58e3-f03a-42b5-ada7-13d84a20e2fd}</Project>
+      <Name>DataGen.StateMachine.Example1</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataGen.StateMachine\DataGen.StateMachine.csproj">
+      <Project>{c55bf4a7-9d46-4d50-8107-cdd9ea867b98}</Project>
+      <Name>DataGen.StateMachine</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
