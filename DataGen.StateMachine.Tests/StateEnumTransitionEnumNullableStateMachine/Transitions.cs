@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace DataGen.StateMachine.Tests.StateEnumTransitionEnumNullableStateMachine
 {
-    public enum FakeStates
+    public enum Transitions
     {
-        Stopped,
+        Play,
 
-        Playing,
+        Stop,
 
-        Paused,
+        Pause,
     }
 }

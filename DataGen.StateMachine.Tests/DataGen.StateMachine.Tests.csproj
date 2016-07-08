@@ -55,15 +55,17 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="FakeStateEnumTransitionEnumNullableStateMachineEngineTest.cs" />
-    <Compile Include="StateEnumTransitionEnumNullableStateMachine\FakeStateEnumTransitionEnumNullableStateMachineEngine.cs" />
-    <Compile Include="StateEnumTransitionEnumNullableStateMachine\FakeStates.cs" />
-    <Compile Include="StateEnumTransitionEnumNullableStateMachine\FakeTransitions.cs" />
-    <Compile Include="StateEnumTransitionEnumStateMachine\FakeStateEnumTransitionEnumStateMachineEngine.cs" />
+    <Compile Include="StateEnumTransitionEnumNullableStateMachineEngineTest.cs" />
+    <Compile Include="StateStringTransitionStringStateMachineEngineTest.cs" />
+    <Compile Include="StateEnumTransitionEnumNullableStateMachine\StateEnumTransitionEnumNullableStateMachineEngine.cs" />
+    <Compile Include="StateEnumTransitionEnumNullableStateMachine\States.cs" />
+    <Compile Include="StateEnumTransitionEnumNullableStateMachine\Transitions.cs" />
+    <Compile Include="StateEnumTransitionEnumStateMachine\StateEnumTransitionEnumStateMachineEngine.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StateEnumTransitionEnumStateMachine\FakeStates.cs" />
-    <Compile Include="StateEnumTransitionEnumStateMachine\FakeTransitions.cs" />
-    <Compile Include="FakeStateEnumTransitionEnumStateMachineEngineTest.cs" />
+    <Compile Include="StateEnumTransitionEnumStateMachine\States.cs" />
+    <Compile Include="StateEnumTransitionEnumStateMachine\Transitions.cs" />
+    <Compile Include="StateEnumTransitionEnumStateMachineEngineTest.cs" />
+    <Compile Include="StateStringTransitionStringStateMachine\StateStringTransitionStringStateMachineEngine.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DataGen.StateMachine.Example1\DataGen.StateMachine.Example1.csproj">
