@@ -48,13 +48,6 @@ namespace DataGen.StateMachine.Tests
             this.ExpectHandleStateTransitionException(FakeStates.Stopped, FakeTransitions.Pause);
         }
 
-        [TestMethod]
-        [ExpectedException(typeof(UnspecifiedTransitionException))]
-        public void FakeStateEnumTransitionEnumStateMachineEngineTest_HandleStateTransition_StoppedUnknown_ThrowsNullTransitionException()
-        {
-            this.ExpectHandleStateTransitionException(FakeStates.Stopped, FakeTransitions.Unknown);
-        }
-
         private void AssertHandleStateTransitionResult(FakeStates cuttentState, FakeTransitions transition, FakeStates expectedState)
         {
             stateMachineContext.State = cuttentState;

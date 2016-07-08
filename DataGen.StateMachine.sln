@@ -15,6 +15,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataGen.StateMachine.Exampl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataGen.StateMachine.Example.Common", "DataGen.StateMachine.Example.Common\DataGen.StateMachine.Example.Common.csproj", "{4970CDF1-D9D1-4CD2-9D55-B8CD2706A73A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examples", "Examples", "{26AB2E53-58C4-44D1-BDBE-9E39E17E699D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Publish", "Publish", "{1CAB1028-53E2-49D2-9BD0-969038FBFD2C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTests", "UnitTests", "{1195FED9-9438-4C1A-8C6C-4846F88B15A9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -126,5 +132,12 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5975EE33-2988-4577-A826-609A63051A86} = {1195FED9-9438-4C1A-8C6C-4846F88B15A9}
+		{18C5902F-3E23-4856-A55B-939813A85B59} = {1CAB1028-53E2-49D2-9BD0-969038FBFD2C}
+		{059D58E3-F03A-42B5-ADA7-13D84A20E2FD} = {26AB2E53-58C4-44D1-BDBE-9E39E17E699D}
+		{D9886E64-2A70-4905-8DA5-7316D6C746B9} = {26AB2E53-58C4-44D1-BDBE-9E39E17E699D}
+		{4970CDF1-D9D1-4CD2-9D55-B8CD2706A73A} = {26AB2E53-58C4-44D1-BDBE-9E39E17E699D}
 	EndGlobalSection
 EndGlobal

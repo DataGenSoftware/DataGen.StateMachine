@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DataGen.Extensions;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,9 +18,9 @@ namespace DataGen.StateMachine
 
         protected abstract IDictionary<StateTransition<TState, TTransition>, TState> InitStatesTransitionsDictionary();
 
-        internal override void HandleStateTransition(StateMachineContext<TState, TTransition> stateMachineContext, TTransition transition)
+        public override void HandleStateTransition(StateMachineContext<TState, TTransition> stateMachineContext, TTransition transition)
         {
-            if(transition.Equals(default(TTransition)))
+            if(transition.IsNull())
             {
                 throw new UnspecifiedTransitionException();
             }
