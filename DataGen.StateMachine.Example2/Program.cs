@@ -24,13 +24,18 @@ namespace DataGen.StateMachine.Example2
 
             Console.WriteLine();
             Console.WriteLine("---Menu---");
+            DisplayMenuTransitionsOptions();
+            Console.WriteLine("X - Exit");
+
+            StateMachineExampleHelper.GetUserCommand(new Action<string>(HandleMenuCommand));
+        }
+
+        private static void DisplayMenuTransitionsOptions()
+        {
             foreach (var state in Enum.GetValues(typeof(Transitions)))
             {
                 Console.WriteLine(string.Format("{0} - {1}", (int)state, Enum.GetName(typeof(Transitions), state)));
             }
-            Console.WriteLine("X - Exit");
-
-            StateMachineExampleHelper.GetUserCommand(new Action<string>(HandleMenuCommand));
         }
 
         private static void HandleMenuCommand(string command)

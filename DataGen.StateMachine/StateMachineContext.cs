@@ -9,39 +9,25 @@ namespace DataGen.StateMachine
 {
     public class StateMachineContext<TState, TTransition> : IStateMachineContext<TState, TTransition>
     {
-        protected virtual IStateMachineEngine<TState, TTransition> StateMachine { get; set; }
+        protected virtual BaseStateMachineEngine<TState, TTransition> StateMachine { get; set; }
 
         public virtual TState State { get; set; }
 
-        public virtual TTransition Transition { get; set; }
-
-        public virtual StateTransition<TState, TTransition> StateTransition
-        {
-            get
-            {
-                if (this.Transition.IsNotNull())
-                {
-                    return new StateTransition<TState, TTransition>()
-                    {
-                        State = this.State,
-                        Transition = this.Transition
-                    };
-                }
-
-                return null;
-            }
-        }
-
         public virtual void HandleTransition(TTransition transition)
         {
-            this.Transition = transition;
-            this.StateMachine.HandleStateTransition(this);
+            this.StateMachine.HandleStateTransition(this, transition);
         }
 
-        public StateMachineContext(IStateMachineEngine<TState, TTransition> stateMachine, TState state)
+        public StateMachineContext(BaseStateMachineEngine<TState, TTransition> stateMachine, TState state)
         {
             this.StateMachine = stateMachine;
             this.State = state;
+        }
+
+        public StateMachineContext(BaseStateMachineEngine<TState, TTransition> stateMachine)
+        {
+            this.StateMachine = stateMachine;
+            this.State = default(TState);
         }
     }
 }

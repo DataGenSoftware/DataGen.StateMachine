@@ -31,5 +31,15 @@ namespace DataGen.StateMachine
         {
             return other != null && other.State.Equals(this.State) && other.Transition.Equals(this.Transition);
         }
+
+        public StateTransition()
+        {
+        }
+
+        public StateTransition(TState state, TTransition transition)
+        {
+            this.State = state;
+            this.Transition = transition;
+        }
     }
 }

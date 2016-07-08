@@ -55,9 +55,15 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="FakeStateEnumTransitionEnumNullableStateMachineEngineTest.cs" />
+    <Compile Include="StateEnumTransitionEnumNullableStateMachine\FakeStateEnumTransitionEnumNullableStateMachineEngine.cs" />
+    <Compile Include="StateEnumTransitionEnumNullableStateMachine\FakeStates.cs" />
+    <Compile Include="StateEnumTransitionEnumNullableStateMachine\FakeTransitions.cs" />
+    <Compile Include="StateEnumTransitionEnumStateMachine\FakeStateEnumTransitionEnumStateMachineEngine.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StateMachineExample2Test.cs" />
-    <Compile Include="StateMachineExample1Test.cs" />
+    <Compile Include="StateEnumTransitionEnumStateMachine\FakeStates.cs" />
+    <Compile Include="StateEnumTransitionEnumStateMachine\FakeTransitions.cs" />
+    <Compile Include="FakeStateEnumTransitionEnumStateMachineEngineTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DataGen.StateMachine.Example1\DataGen.StateMachine.Example1.csproj">

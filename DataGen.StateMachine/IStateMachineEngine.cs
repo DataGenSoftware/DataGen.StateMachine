@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace DataGen.StateMachine
 {
-    public interface IStateMachineEngine<TState, TTransition>
+    public abstract class BaseStateMachineEngine<TState, TTransition>
     {
-        void HandleStateTransition(StateMachineContext<TState, TTransition> stateMachineContext);
+        internal abstract void HandleStateTransition(StateMachineContext<TState, TTransition> stateMachineContext, TTransition transition);
     }
 }

@@ -7,7 +7,7 @@ namespace DataGen.StateMachine.Tests
     [TestClass]
     public class StateMachineExample2Test
     {
-        private static IStateMachineEngine<States, Transitions?> stateMachine;
+        private static BaseStateMachineEngine<States, Transitions?> stateMachine;
 
         [ClassInitialize]
         public static void Init(TestContext context)

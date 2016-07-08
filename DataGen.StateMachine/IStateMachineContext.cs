@@ -10,9 +10,9 @@ namespace DataGen.StateMachine
     {
         TState State { get; set; }
 
-        TTransition Transition { get; set; }
+        //TTransition Transition { get; set; }
 
-        StateTransition<TState, TTransition> StateTransition { get; }
+        //StateTransition<TState, TTransition> StateTransition { get; }
 
         void HandleTransition(TTransition transition);
     }

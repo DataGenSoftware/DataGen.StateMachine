@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DataGen.StateMachine
 {
-    public abstract class StateMachineEngine<TState, TTransition>: IStateMachineEngine<TState, TTransition>
+    public abstract class StateMachineEngine<TState, TTransition>: BaseStateMachineEngine<TState, TTransition>
     {
         protected virtual IDictionary<StateTransition<TState, TTransition>, TState> StatesTransitionsDictionary { get; set; }
 
@@ -16,16 +16,15 @@ namespace DataGen.StateMachine
         }
 
         protected abstract IDictionary<StateTransition<TState, TTransition>, TState> InitStatesTransitionsDictionary();
-        
-        public virtual void HandleStateTransition(StateMachineContext<TState, TTransition> stateMachineContext)
+
+        internal override void HandleStateTransition(StateMachineContext<TState, TTransition> stateMachineContext, TTransition transition)
         {
-            if(stateMachineContext.Transition.Equals(default(TTransition)))
+            if(transition.Equals(default(TTransition)))
             {
                 throw new UnspecifiedTransitionException();
             }
 
-            stateMachineContext.State = this.TransitState(stateMachineContext.StateTransition);
-            stateMachineContext.Transition = default(TTransition);
+            stateMachineContext.State = this.TransitState(new StateTransition<TState, TTransition>(stateMachineContext.State, transition));
         }
 
         protected virtual TState TransitState(StateTransition<TState, TTransition> stateTransition)
