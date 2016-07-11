@@ -18,7 +18,7 @@ namespace DataGen.StateMachine
 
         protected abstract IDictionary<StateTransition<TState, TTransition>, TState> InitStatesTransitionsDictionary();
 
-        public override void HandleStateTransition(StateMachineContext<TState, TTransition> stateMachineContext, TTransition transition)
+        public override void HandleStateTransition(StateMachineEngineContext<TState, TTransition> stateMachineContext, TTransition transition)
         {
             if(transition.IsNull())
             {

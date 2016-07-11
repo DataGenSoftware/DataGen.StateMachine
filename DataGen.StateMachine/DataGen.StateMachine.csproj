@@ -46,11 +46,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="InvalidStateTransitionException.cs" />
+    <Compile Include="ObjectOriented\IState.cs" />
     <Compile Include="IStateMachineContext.cs" />
     <Compile Include="IStateMachineEngine.cs" />
-    <Compile Include="NullTransitionException.cs" />
+    <Compile Include="ObjectOriented\ObjectOrientedStateMachineContext.cs" />
+    <Compile Include="UnspecifiedStateMachineEngineException.cs" />
+    <Compile Include="UnspecifiedStateException.cs" />
+    <Compile Include="UnspecifiedTransitionException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StateMachineContext.cs" />
+    <Compile Include="StateMachineEngineContext.cs" />
     <Compile Include="StateMachineEngine.cs" />
     <Compile Include="StateTransition.cs" />
   </ItemGroup>

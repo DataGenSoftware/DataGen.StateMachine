@@ -56,6 +56,11 @@
   </Choose>
   <ItemGroup>
     <Compile Include="StateEnumTransitionEnumNullableStateMachineEngineTest.cs" />
+    <Compile Include="StateObjectTransitionEnumStateMachineEngineTest.cs" />
+    <Compile Include="StateObjectTransitionObjectStateMachine\States\Paused.cs" />
+    <Compile Include="StateObjectTransitionObjectStateMachine\States\Playing.cs" />
+    <Compile Include="StateObjectTransitionObjectStateMachine\States\Stopped.cs" />
+    <Compile Include="StateObjectTransitionObjectStateMachine\Transitions.cs" />
     <Compile Include="StateStringTransitionStringStateMachineEngineTest.cs" />
     <Compile Include="StateEnumTransitionEnumNullableStateMachine\StateEnumTransitionEnumNullableStateMachineEngine.cs" />
     <Compile Include="StateEnumTransitionEnumNullableStateMachine\States.cs" />
@@ -84,6 +89,7 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>

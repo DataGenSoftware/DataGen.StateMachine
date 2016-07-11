@@ -12,7 +12,7 @@ namespace DataGen.StateMachine.Tests
         [ClassInitialize]
         public static void Init(TestContext context)
         {
-            stateMachineContext = new StateMachineContext<string, string>(new StateStringTransitionStringStateMachine.StateStringTransitionStringStateMachineEngine());
+            stateMachineContext = new StateMachineEngineContext<string, string>(new StateStringTransitionStringStateMachine.StateStringTransitionStringStateMachineEngine());
         }
 
         [TestInitialize]

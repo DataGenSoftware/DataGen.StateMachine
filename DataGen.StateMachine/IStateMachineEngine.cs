@@ -8,6 +8,6 @@ namespace DataGen.StateMachine
 {
     public abstract class BaseStateMachineEngine<TState, TTransition>
     {
-        public abstract void HandleStateTransition(StateMachineContext<TState, TTransition> stateMachineContext, TTransition transition);
+        public abstract void HandleStateTransition(StateMachineEngineContext<TState, TTransition> stateMachineContext, TTransition transition);
     }
 }

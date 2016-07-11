@@ -9,11 +9,11 @@ namespace DataGen.StateMachine.Example1
 {
     class Program
     {
-        static StateMachineContext<States, Transitions> Player;
+        static StateMachineEngineContext<States, Transitions> Player;
 
         static void Main(string[] args)
         {
-            Player = new StateMachineContext<States, Transitions>(new StateMachineEngine(), States.Stopped);
+            Player = new StateMachineEngineContext<States, Transitions>(new StateMachineEngine(), States.Stopped);
 
             DisplayMenu();
         }

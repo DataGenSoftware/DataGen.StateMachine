@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace DataGen.StateMachine
 {
-    public interface IStateMachineContext<TState, TTransition>
+    public class UnspecifiedStateException : Exception
     {
-        TState State { get; set; }
-
-        void HandleTransition(TTransition transition);
+        public UnspecifiedStateException()
+            :base("State not set.")
+        {
+        }
     }
 }
