@@ -37,8 +37,8 @@
       <HintPath>..\packages\DataGen.Extensions.1.9.2\lib\net46\DataGen.Extensions.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="DataGen.Publish, Version=1.1.2.26041, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\DataGen.Publish.1.1.2\lib\net40\DataGen.Publish.dll</HintPath>
+    <Reference Include="DataGen.Publish, Version=1.1.3.31843, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DataGen.Publish.1.1.3\lib\net40\DataGen.Publish.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />

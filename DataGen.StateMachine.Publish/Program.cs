@@ -11,9 +11,7 @@ namespace DataGen.StateMachine.Publish
     {
         static void Main(string[] args)
         {
-            var publishManagerBuilder = new PublishManagerBuilder();
-            publishManagerBuilder.Build();
-            var publishManager = publishManagerBuilder.PublishManager;
+            var publishManager = PublishManager.Create();
 
             publishManager.DisplayMenu();
         }

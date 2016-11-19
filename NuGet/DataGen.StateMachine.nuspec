@@ -11,7 +11,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>A generic state machine framework.</description>
     <summary>A generic state machine framework.</summary>
-    <tags>.net c# state machine classic object oriented</tags>
+    <tags>.net state machine classic object oriented</tags>
     <copyright>Copyright © Karol Habczyk</copyright>
     <dependencies>
       <group>
