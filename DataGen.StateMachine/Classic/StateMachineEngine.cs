@@ -20,7 +20,7 @@ namespace DataGen.StateMachine
 
         public override void HandleStateTransition(StateMachineEngineContext<TState, TTransition> stateMachineContext, TTransition transition)
         {
-            if(transition.IsNull())
+            if(transition == null)
             {
                 throw new UnspecifiedTransitionException();
             }

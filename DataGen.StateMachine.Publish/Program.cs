@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DataGen.Publish;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +11,11 @@ namespace DataGen.StateMachine.Publish
     {
         static void Main(string[] args)
         {
+            var publishManagerBuilder = new PublishManagerBuilder();
+            publishManagerBuilder.Build();
+            var publishManager = publishManagerBuilder.PublishManager;
+
+            publishManager.DisplayMenu();
         }
     }
 }

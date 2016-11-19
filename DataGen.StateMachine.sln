@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataGen.StateMachine", "DataGen.StateMachine\DataGen.StateMachine.csproj", "{C55BF4A7-9D46-4D50-8107-CDD9EA867B98}"
 EndProject
@@ -20,6 +20,11 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Publish", "Publish", "{1CAB1028-53E2-49D2-9BD0-969038FBFD2C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTests", "UnitTests", "{1195FED9-9438-4C1A-8C6C-4846F88B15A9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NuGet", "NuGet", "{3E07C12E-5587-4812-A19D-8F23CC5F425F}"
+	ProjectSection(SolutionItems) = preProject
+		NuGet\DataGen.StateMachine.nuspec = NuGet\DataGen.StateMachine.nuspec
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

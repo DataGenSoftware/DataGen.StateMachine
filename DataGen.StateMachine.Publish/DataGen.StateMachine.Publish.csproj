@@ -33,8 +33,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DataGen.Extensions, Version=1.5.7.35892, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\DataGen.Extensions.1.5.7\lib\net46\DataGen.Extensions.dll</HintPath>
+    <Reference Include="DataGen.Extensions, Version=1.9.2.35878, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DataGen.Extensions.1.9.2\lib\net46\DataGen.Extensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DataGen.Publish, Version=1.1.2.26041, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DataGen.Publish.1.1.2\lib\net40\DataGen.Publish.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
