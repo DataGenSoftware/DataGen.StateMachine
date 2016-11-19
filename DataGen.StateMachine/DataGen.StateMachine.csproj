@@ -45,18 +45,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="InvalidStateTransitionException.cs" />
-    <Compile Include="ObjectOriented\IState.cs" />
-    <Compile Include="IStateMachineContext.cs" />
-    <Compile Include="IStateMachineEngine.cs" />
+    <Compile Include="Exceptions\InvalidStateTransitionException.cs" />
+    <Compile Include="ObjectOriented\Contracts\IState.cs" />
+    <Compile Include="Classic\Contracts\IStateMachineContext.cs" />
+    <Compile Include="Classic\Contracts\IStateMachineEngine.cs" />
     <Compile Include="ObjectOriented\ObjectOrientedStateMachineContext.cs" />
-    <Compile Include="UnspecifiedStateMachineEngineException.cs" />
-    <Compile Include="UnspecifiedStateException.cs" />
-    <Compile Include="UnspecifiedTransitionException.cs" />
+    <Compile Include="Exceptions\UnspecifiedStateMachineEngineException.cs" />
+    <Compile Include="Exceptions\UnspecifiedStateException.cs" />
+    <Compile Include="Exceptions\UnspecifiedTransitionException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StateMachineEngineContext.cs" />
-    <Compile Include="StateMachineEngine.cs" />
-    <Compile Include="StateTransition.cs" />
+    <Compile Include="Classic\StateMachineEngineContext.cs" />
+    <Compile Include="Classic\StateMachineEngine.cs" />
+    <Compile Include="Classic\StateTransition.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
